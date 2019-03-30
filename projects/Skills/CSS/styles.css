@@ -1,0 +1,59 @@
+body{
+          background-color: #393e46;
+}
+hr{
+          border-style: none;
+          border-top-style: dotted;
+          border-color: grey;
+          border-width: 5px;
+          width: 5%;
+}
+img{
+          border-radius: 25% 25%;
+
+}
+h1{
+  color: #66BFBF;
+  font: italic small-caps 16px/2 cursive;
+  font-family:fantasy;
+}
+h3{
+  color: #66BFBF;
+  font: italic small-caps 16px/2 cursive;
+  font-family:fantasy;
+  font-size: 28px;
+}
+a{
+  color: black;
+}
+a:hover{
+  color: #66BFBF;
+  font-size: 24px;
+}
+.em{
+  -ms-align-items: right;
+  align-items: right;
+}
+td{
+  font: italic small-caps 16px/2 cursive;
+  font-family:fantasy;
+  font-size: 20px;
+}
+p{
+  font: italic small-caps 16px/2 cursive;
+  font-family:fantasy;
+  font-size: 20px;
+}
+li{
+  font: italic small-caps 16px/2 cursive;
+  font-family:fantasy;
+  font-size: 20px;
+}
+label{
+  font: italic small-caps 16px/2 cursive;
+  font-family:fantasy;
+  font-size: 20px;
+}
+.email:hover{
+  color:  #66BFBF;
+}

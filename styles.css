@@ -205,3 +205,12 @@ hr {
     color: #EAF6f6;
     font-size: .75rem;
 }
+
+.navbar{
+    font-family: 'Permanent Marker';
+}
+
+.myskills-img{
+    width: 25%;
+    border-radius: 25px 25px;
+}
