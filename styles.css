@@ -66,6 +66,11 @@ hr {
     font-family: 'Permanent Marker', cursive;
 }
 
+.hello-img:hover{
+    text-decoration: #66BFBF;
+    font-size: 2rem;
+}
+
 .profile-description {
     color: #40514E;
 }
