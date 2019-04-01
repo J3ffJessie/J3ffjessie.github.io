@@ -3,6 +3,7 @@ body {
     text-align: center;
     margin: 0;
     background-color: #EAF6f6;
+    display: inline-block;
 }
 
 h1 {
