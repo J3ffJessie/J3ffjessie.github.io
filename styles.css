@@ -222,8 +222,8 @@ hr {
     border-radius: 25px 25px;
 }
 
-/* @media screen and (max-width: 400px){
+@media screen and (max-width: 400px){
     body{
         display: inline-block;
     }
-} */
+}
