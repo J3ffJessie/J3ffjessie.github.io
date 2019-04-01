@@ -47,11 +47,13 @@ hr {
     position: relative;
     padding-top: 100px;
     margin-top: 30px;
+    width: 100vw;
 }
 
 .middle-container {
     position: relative;
     margin: 50px auto 0px auto;
+    width: 100vw;
 }
 
 .bottom-container {
@@ -62,6 +64,7 @@ hr {
     padding-top: 50px;
     padding-bottom: 100px;
     font-size: 1.25rem;
+    width: 100vw;
 }
 
 .hello {
