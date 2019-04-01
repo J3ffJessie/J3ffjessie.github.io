@@ -3,7 +3,6 @@ body {
     text-align: center;
     margin: 0;
     background-color: #EAF6f6;
-    display: inline-block;
 }
 
 h1 {
@@ -219,4 +218,10 @@ hr {
 .myskills-img{
     width: 25%;
     border-radius: 25px 25px;
+}
+
+@media screen and (max-width: 500px){
+    body{
+        display: inline-block;
+    }
 }
