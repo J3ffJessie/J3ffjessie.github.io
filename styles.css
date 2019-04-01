@@ -4,7 +4,7 @@ body {
     margin: 0;
     background-color: #EAF6f6;
     width: 100vw;
-    display: inline-table;
+    display: inline-block;
 }
 
 h1 {
@@ -220,4 +220,10 @@ hr {
 .myskills-img{
     width: 25%;
     border-radius: 25px 25px;
+}
+
+@media screen and (max-width: 400px){
+    body{
+        display: inline-table;
+    }
 }
