@@ -4,6 +4,7 @@ body {
     margin: 0;
     background-color: #EAF6f6;
     width: 100vw;
+    display: inline-table;
 }
 
 h1 {
@@ -221,8 +222,8 @@ hr {
     border-radius: 25px 25px;
 }
 
-@media screen and (max-width: 400px){
+/* @media screen and (max-width: 400px){
     body{
         display: inline-block;
     }
-}
+} */
