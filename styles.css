@@ -170,7 +170,7 @@ hr {
 
 .linkedin {
     position: relative;
-    right: 80px;
+    right: 20px;
     top: 30px;
     text-decoration: none;
     font-family: 'Permanent Marker', cursive;
@@ -195,7 +195,7 @@ hr {
 .projects {
     position: relative;
     top: 30px;
-    left: 80px;
+    left: 20px;
     text-decoration: none;
     font-family: 'Permanent Marker', cursive;
 }
