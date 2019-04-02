@@ -225,6 +225,10 @@ hr {
     border-radius: 25px 25px;
 }
 
+#myDIV{
+    display: none;
+}
+
 #mouseChange:hover {
     cursor: pointer;
 }
