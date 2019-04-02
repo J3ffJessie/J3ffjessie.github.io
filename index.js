@@ -7,6 +7,6 @@ function myFunction() {
   }
 }
 
-function myFunction() {
+function sendMessage() {
   alert("Header click reveals navbar");
 }
