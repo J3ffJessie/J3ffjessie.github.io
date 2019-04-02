@@ -224,3 +224,7 @@ hr {
     width: 25%;
     border-radius: 25px 25px;
 }
+
+#mouseChange:hover {
+    cursor: pointer;
+}
