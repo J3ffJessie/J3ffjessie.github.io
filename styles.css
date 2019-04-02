@@ -71,7 +71,7 @@ hr {
     font-family: 'Permanent Marker', cursive;
 }
 
-.hello-img:hover{
+.hello-img:hover {
     text-decoration: #66BFBF;
     font-size: 2rem;
 }
@@ -96,7 +96,8 @@ hr {
     left: 350px;
     bottom: 300px;
 }
-.mountain{
+
+.mountain {
     opacity: 0.8;
 }
 
@@ -180,8 +181,9 @@ hr {
     text-decoration: none;
     font-family: 'Permanent Marker', cursive;
 }
-.linkedin:hover{
-    color:#ffffff;
+
+.linkedin:hover {
+    color: #ffffff;
     font-size: 1.5rem;
 }
 
@@ -192,8 +194,9 @@ hr {
     text-decoration: none;
     font-family: 'Permanent Marker', cursive;
 }
-.twitter:hover{
-    color:#ffffff;
+
+.twitter:hover {
+    color: #ffffff;
     font-size: 1.5rem;
 }
 
@@ -204,8 +207,9 @@ hr {
     text-decoration: none;
     font-family: 'Permanent Marker', cursive;
 }
-.projects:hover{
-    color:#ffffff;
+
+.projects:hover {
+    color: #ffffff;
     font-size: 1.5rem;
 }
 
@@ -216,16 +220,16 @@ hr {
     font-size: .75rem;
 }
 
-.navbar{
+.navbar {
     font-family: 'Permanent Marker';
 }
 
-.myskills-img{
+.myskills-img {
     width: 25%;
     border-radius: 25px 25px;
 }
 
-#myDIV{
+#myDIV {
     display: none;
 }
 

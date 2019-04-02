@@ -6,6 +6,7 @@ function myFunction() {
     x.style.display = "none";
   }
 }
-function myFunction(){
+
+function myFunction() {
   alert("Header click reveals navbar");
 }
