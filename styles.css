@@ -1,4 +1,8 @@
 /*Styles by Tag */
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body {
     text-align: center;
     margin: 0px auto 0px auto;
