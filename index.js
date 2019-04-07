@@ -1,12 +1,6 @@
-function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
+let mainNav = document.getElementById('js-menu');
+let navBarToggle = document.getElementById('js-navbar-toggle');
 
-function sendMessage() {
-  alert("Header click reveals navbar");
-}
+navBarToggle.addEventListener('click', function () {
+  mainNav.classList.toggle('active');
+});

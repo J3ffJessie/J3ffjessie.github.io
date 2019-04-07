@@ -10,10 +10,33 @@
     <link rel="icon" href="/Images/jeff-favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Permanent+Marker|Merienda|Indie+Flower"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
 
 </head>
 
 <body>
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <a href="#" class="logo">Jeff Jessie</a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="index.html" class="nav-links">Home</a>
+            </li>
+            <li>
+                <a href="#about-me" class="nav-links">About Me</a>
+            </li>
+            <li>
+                <a href="#contact" class="nav-links">Contact Me</a>
+            </li>
+            <li>
+                <a href="#projects" class="nav-links">Projects Page</a>
+            </li>
+        </ul>
+    </nav>
     <div class="top-container">
         <img class="top-cloud" src="./Images/cloud.png" alt="image of cloud">
         <h1>I'm Jeff</h1>
@@ -22,7 +45,7 @@
         <img class="mountain" src="./Images/mountain.png" alt="mountain image">
     </div>
     <div class="middle-container">
-        <div class="profile">
+        <div id="about-me" class="profile">
             <img class="image" src="./Images/jeff profile.png" alt="profile image">
             <h2 class="hello">Hello.</h2>
             <p class="profile-description">Mobile technology lover. Coffee connessuer, and military veteran.</p>
@@ -52,7 +75,7 @@
             </div>
         </div>
         <hr>
-        <div class="contact-me">
+        <div id="contact" class="contact-me">
             <h2>Get In Touch</h2>
             <h3>Reach out for hiring, projects or just to chat</h3>
             <p>Email is the quickest way to reach me, however I have linked my social media accounts below as well, and
@@ -67,9 +90,10 @@
     <div class="bottom-container">
         <a class="linkedin" href="https://www.linkedin.com/in/jeff-jessie-4b2323a9/">LinkedIn</a>
         <a class="twitter" href="https://twitter.com/j3ffjessie">Twitter</a>
-        <a class="projects" href="projects.html">Projects</a>
+        <a id="projects" class="projects" href="projects.html">Projects</a>
         <p class="copyright">© 2019 Jeff Jessie.</p>
     </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
