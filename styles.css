@@ -182,19 +182,36 @@ hr {
 
 .top-cloud {
     position: absolute;
-    right: 300px;
+    right: auto;
     top: 50px;
+}
+
+.top-cloud2 {
+    position: absolute;
+    left: 10px;
+    top: 275px;
+    right: auto;
+    z-index: -1;
 }
 
 .bottom-cloud {
     position: absolute;
-    left: 350px;
+    top: 200px;
+    right: 50px;
+    left: auto;
     bottom: 300px;
+    z-index: -1;
 }
 
-.mountain {
-    opacity: 0.8;
+.bottom-cloud2 {
+    position: initial;
+    top: 250px;
+    right: auto;
+    left: auto;
+    bottom: 250px;
+    z-index: -1;
 }
+
 
 .image {
     height: 175px;
