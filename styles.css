@@ -234,6 +234,14 @@ hr {
     font-family: 'Permanent Marker', cursive;
 }
 
+.resume-img {
+    width: 25%;
+    border-radius: 25px 25px;
+    float: left;
+    margin-right: 30px;
+    border: 1px solid #11999E;
+}
+
 .skills-img {
     width: 25%;
     border-radius: 25px 25px;
