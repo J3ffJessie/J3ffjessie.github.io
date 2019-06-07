@@ -340,3 +340,11 @@ hr {
     width: 25%;
     border-radius: 25px 25px;
 }
+
+button{
+    border-radius: 25%;
+}
+
+button:hover{
+    border: 3px solid blue;
+}
