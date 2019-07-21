@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Jeff Jessie</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Projects</title>
   <link rel="icon" href="/Images/jeff-favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Permanent+Marker|Merienda|Indie+Flower"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Permanent+Marker|Merienda|
+  Indie+Flower|Calligraffitti" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
@@ -20,93 +19,111 @@
     <span class="navbar-toggle" id="js-navbar-toggle">
       <i class="fas fa-bars"></i>
     </span>
-    <a href="#" class="logo">Jeff Jessie</a>
+    <a class="logo">Jeff Jessie</a>
     <ul class="main-nav" id="js-menu">
       <li>
-        <a href="./index.html" class="nav-links">Home</a>
+        <a href="index.html" class="nav-links">Home</a>
       </li>
       <li>
-        <a href="#skills" class="nav-links">Skills Page</a>
+        <a href="about.html" class="nav-links">About Me</a>
       </li>
       <li>
-        <a href="#tindog" class="nav-links">TinDog</a>
+        <a href="contact.html" class="nav-links">Contact Me</a>
       </li>
       <li>
-        <a href="#dicegame" class="nav-links">Dice Game</a>
-      </li>
-      <li>
-        <a href="#drumkit" class="nav-links">Drum Kit</a>
-      </li>
-      <li>
-        <a href="#simon" class="nav-links">Simon Game</a>
+        <a href="projects.html" class="nav-links">My Work</a>
       </li>
     </ul>
   </nav>
-  <div class="top-container">
-    <img class="top-cloud" src="./Images/cloud.png" alt="image of cloud">
-    <img class="top-cloud2" src="./Images/cloud.png" alt="image of cloud">
-    <h1 id="mouseChange" onclick="myFunction()">Project Page</h1>
-    <img class="bottom-cloud" src="./Images/cloud.png" alt="image of cloud">
-    <img class="bottom-cloud2" src="./Images/cloud.png" alt="image of cloud">
-  </div>
+  <div class="main">
 
-  <div class="middle-container">
-    <div class="profile">
-      <img id="skills" class="image" src="./Images/skillpage.png" alt="skills image">
-      <h2 class="hello">Skills Page</h2>
-      <button onclick=window.open("https://j3ffjessie.github.io/SkillsPage")><i class="fas fa-eye fa-2x"></i></button>
-      <button onclick=window.open("https://github.com/J3ffJessie/SkillsPage")><i class="fab fa-github fa-2x"></i></button>
+    <h2>My Work</h2>
+    <p>All work has links to source code as well as viewing in browser.</p>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <img src='/Images/tindog.png' alt="Tinder for Dogs" style="width:100%">
+          <i class="far fa-eye button1" onclick=window.open("https://j3ffjessie.github.io/TinDog")> </i> <i
+            class="fab fa-github button2" onclick=window.open("https://github.com/J3ffJessie/TinDog")> </i> <h3>TinDog
+            </h3>
+            <p>A simple bootstrap styled static page with different elements utilizing Bootstrap.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="/Images/skillpage.png" alt="Skills Page" style="width:100%">
+          <i class="far fa-eye button1" onclick=window.open("https://j3ffjessie.github.io/SkillsPage/")> </i> <i
+            class="fab fa-github button2" onclick=window.open("https://github.com/J3ffJessie/SkillsPage")> </i>
+            <h3>Skills Page</h3>
+            <p>A partially accurate CV style page that highlights some of the areas I am working with.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="/Images/simon.png" alt="Simon Says" style="width:100%">
+          <i class="far fa-eye button1" onclick=window.open("https://j3ffjessie.github.io/Simon-Game/")> </i> <i
+            class="fab fa-github button2" onclick=window.open("https://github.com/J3ffJessie/Simon-Game")> </i> <h3>My
+            Work</h3>
+            <p>Simon Says utilizing Javascript along with HTML and CSS.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="/Images/signup.png" alt="Newsletter Signup" style="width:100%">
+          <i class="far fa-eye button1" onclick=window.open("https://jjnewsletter.herokuapp.com/")> </i> <i
+            class="fab fa-github button2" onclick=window.open("https://github.com/J3ffJessie/Newsletter-Signup")> </i>
+            <h3>Newsletter Signup Page</h3>
+            <p>Utilized Mailchimp API, alongside express server and NodeJS, hosted on Heroku.</p>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="middle-container">
-    <div class="profile">
-      <img id="tindog" class="image" src="./Images/tindog.png" alt="TinDog image">
-      <h2 class="hello">TinDog</h2>
-      <button onclick=window.open("https://j3ffjessie.github.io/TinDog")><i class="fas fa-eye fa-2x"></i></button>
-      <button onclick=window.open("https://github.com/J3ffJessie/TinDog")><i class="fab fa-github fa-2x"></i></button>
+    <div class="content">
+      <img src="" alt="" style="width:100%">
+      <h3 class="bottom-section">Some Other Work</h3>
+      <p>These are some of my other projects that may not be tied to web development per say, but that I had fun working
+        on and are still a work in progress.</p>
     </div>
-  </div>
-
-  <div class="middle-container">
-    <div class="profile">
-      <img id="dicegame" class="image" src="./Images/DiceGame.png" alt="DiceGame image">
-      <h2 class="hello">DiceGame</h2>
-      <button onclick=window.open("https://j3ffjessie.github.io/DiceGame")><i class="fas fa-eye fa-2x"></i></button>
-      <button onclick=window.open("https://github.com/J3ffJessie/DiceGame")><i class="fab fa-github fa-2x"></i></button>
+    <hr>
+    <div class="column">
+      <div class="content">
+        <img src="/Images/DrumKit.png" alt="" style="width:100%">
+        <i class="fab fa-github button2" onclick=window.open("https://github.com/J3ffJessie/DrumKit")> </i> <h3>Drum Kit
+          </h3>
+          <p>A simple browser based drum kit. Created using HTML, CSS and JS. DOM elements to make the drum kit
+            function.</p>
+      </div>
     </div>
-  </div>
-  <div class="middle-container">
-    <div class="profile">
-      <img id="drumkit" class="image" src="./Images/DrumKit.png" alt="Drum Kit image">
-      <h2 class="hello">Drum Kit</h2>
-      <button onclick=window.open("https://j3ffjessie.github.io/DrumKit")><i class="fas fa-eye fa-2x"></i></button>
-      <button onclick=window.open("https://github.com/J3ffJessie/DrumKit")><i class="fab fa-github fa-2x"></i></button>
+    <div class="column">
+      <div class="content">
+        <img src="/Images/DiceGame.png" alt="" style="width:100%">
+        <i class="fab fa-github button2" onclick=window.open("https://github.com/J3ffJessie/DiceGame")> </i> <h3>Dice
+          Game</h3>
+          <p>A simple Dice Game in the browser. HTML, CSS, JS and DOM elements.</p>
+      </div>
     </div>
-    <div class="middle-container">
-      <div class="profile">
-        <img id="simon" class="image" src="./Images/simon.png" alt="Simon Game image">
-        <h2 class="hello">Simon Game</h2>
-        <button onclick=window.open("https://j3ffjessie.github.io/Simon-Game/")><i class="fas fa-eye fa-2x"></i></button>
-        <button onclick=window.open("https://github.com/J3ffJessie/Simon-Game")><i class="fab fa-github fa-2x"></i></button>
+    <div class="column">
+      <div class="content">
+        <img src="/Images/cebwatch.png" alt="" style="width:100%">
+        <i class="fab fa-github button2" onclick=window.open("https://github.com/J3ffJessie/Cebwatch")> </i>
+          <h3>Cebwatch</h3>
+          <p>A group project utilizing NextJS, React and various APIs to create a Social Media and News aggregator web
+            application for celebrities. Development ended when group split up, but the project will be revisited upon
+            further learning.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <img src="" alt="" style="width:100%">
+        <i class="fab fa-github button2" onclick=window.open("https://github.com/J3ffJessie/TwitterBot")> </i>
+          <h3>Twitter-Bots</h3>
+          <p>I have played a little bit with Twitter API and built a like and follow bot utilizing their API and JS.</p>
+      </div>
+    </div>
+
   </div>
-  <div class="middle-container">
-    <div class="profile">
-      <img id="Signup" class="image" src="./Images/signup.png" alt="SignUp Page">
-      <h2 class="hello">Newsletter SignUp</h2>
-      <button onclick=window.open("https://jjnewsletter.herokuapp.com/")><i class="fas fa-eye fa-2x"></i></button>
-      <button onclick=window.open("https://github.com/J3ffJessie/Newsletter-Signup")><i class="fab fa-github fa-2x"></i></button>
-</div>
-  <div class="bottom-container">
-    <a class="linkedin" href="https://www.linkedin.com/in/jeff-jessie-4b2323a9/">LinkedIn</a>
-    <a class="twitter" href="https://twitter.com/j3ffjessie">Twitter</a>
-    <a id="projects" class="projects" href="projects.html">Projects</a>
-    <p class="copyright">© 2019 Jeff Jessie.</p>
-  </div>
-
-
-
-
 
 
   <script src="index.js"></script>

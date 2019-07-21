@@ -1,3 +1,4 @@
+// toggle script for the navbar
 let mainNav = document.getElementById('js-menu');
 let navBarToggle = document.getElementById('js-navbar-toggle');
 

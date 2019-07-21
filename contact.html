@@ -5,14 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Jeff Jessie</title>
+  <title>Contact Me</title>
   <link rel="icon" href="/Images/jeff-favicon.ico">
+  <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Permanent+Marker|Merienda|
   Indie+Flower|Calligraffitti" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
@@ -20,7 +19,7 @@
     <span class="navbar-toggle" id="js-navbar-toggle">
       <i class="fas fa-bars"></i>
     </span>
-    <a class="logo">Welcome Home</a>
+    <a class="logo">Contact Me</a>
     <ul class="main-nav" id="js-menu">
       <li>
         <a href="index.html" class="nav-links">Home</a>
@@ -36,20 +35,23 @@
       </li>
     </ul>
   </nav>
+  <h1>Reach Out</h1>
+  <div class="form-container">
+    <form class="form-element" action="action_page.php">
+  
+      <label class="label" for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label class="label" for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label class="label" for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      <a class="form-submit" href="mailto:j3ffjessie@icloud.com?Subject=Website%20Contact" target="_top">Send Mail</a>
+  
+    </form>
+  </div>
 </body>
-<div class="top-container" id="slide-in">
-  <h1>Jeff Jessie</h1>
-  <img src="/Images/jeff profile.png" alt="Cartoon Profile Image">
-  <h2>Web Developer</h2>
-</div>
-<br>
-<div class="social-links" id="sliding">
-  <a class="iconLink" href="https://github.com/J3ffJessie"><i class="fab fa-github-square"></i></a>
-  <a class="iconLink" href="https://dev.to/j3ffjessie"><i class="fab fa-dev"></i></a>
-  <a class="iconLink" href="https://twitter.com/J3ffJessie"><i class="fab fa-twitter-square"></i></a>
-  <a class="iconLink" href="https://www.linkedin.com/in/jeff-jessie-4b2323a9/"><i class="fab fa-linkedin"></i></a>
-  <a class="iconLink" href="/Resources/Web Resume.pdf"><i class="fas fa-file-pdf"></i></a>
-</div>
 <script src="index.js"></script>
 <footer class="footer mt-auto py-3">
   <div class="container">
