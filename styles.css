@@ -1,7 +1,7 @@
-  html{
+  html {
     scroll-behavior: smooth;
-  }  
-  
+  }
+
   body {
     text-align: center;
     z-index: -1;
@@ -413,10 +413,10 @@
     font-style: oblique;
   }
 
-#carouselContainer{
-  position: relative;
-  margin: auto;
-  align-content: center;
-  width: 50% !important;
-  padding-top: 50px;
-}
+  #carouselContainer {
+    position: relative;
+    margin: auto;
+    align-content: center;
+    width: 50% !important;
+    padding-top: 50px;
+  }
