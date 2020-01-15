@@ -413,10 +413,16 @@
     font-style: oblique;
   }
 
-  #carouselContainer {
-    position: relative;
-    margin: auto;
-    align-content: center;
-    width: 50% !important;
-    padding-top: 50px;
+
+
+  /* styling for the actual cards background to make the item in the card pop.  Individualize to make each project look different */
+  .card {
+    background-color: rgba(245, 245, 245, 0) !important;
+    border: rgba(245, 245, 245, 0);
+  }
+
+  @media only screen and (max-width: 500px, max-height: 100%) {
+    div.main {
+      display:flex;
+    }
   }

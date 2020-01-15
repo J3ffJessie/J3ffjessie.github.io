@@ -11,30 +11,32 @@
   Indie+Flower|Calligraffitti" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <nav class="navbar">
-      <span class="navbar-toggle" id="js-navbar-toggle">
-        <i class="fas fa-bars"></i>
-      </span>
-      <a class="logo">Jeff Jessie</a>
-      <ul class="main-nav" id="js-menu">
-        <li>
-          <a href="index.html" class="nav-links">Home</a>
-        </li>
-        <li>
-          <a href="about.html" class="nav-links">About Me</a>
-        </li>
-        <li>
-          <a href="contact.html" class="nav-links">Contact Me</a>
-        </li>
-        <li>
-          <a href="projects.html" class="nav-links">My Work</a>
-        </li>
-      </ul>
-    </nav>
+  <nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+      <i class="fas fa-bars"></i>
+    </span>
+    <a class="logo">Jeff Jessie</a>
+    <ul class="main-nav" id="js-menu">
+      <li>
+        <a href="index.html" class="nav-links">Home</a>
+      </li>
+      <li>
+        <a href="about.html" class="nav-links">About Me</a>
+      </li>
+      <li>
+        <a href="contact.html" class="nav-links">Contact Me</a>
+      </li>
+      <li>
+        <a href="projects.html" class="nav-links">My Work</a>
+      </li>
+    </ul>
+  </nav>
   <div class="main">
 
     <h2>My Work</h2>
@@ -42,48 +44,42 @@
 
     <!-- Portfolio Gallery Grid -->
     <div class="row">
-      <div class="column">
-        <div class="content">
-          <img src='/Images/Blog.png' alt="Blog Homepage" style="width:100%">
-          <i class="far fa-eye button1" onclick=window.open("https://j2development.herokuapp.com")> </i> <i
-            class="fab fa-github button2" onclick=window.open("https://github.com/J3ffJessie/CodeJourney")> </i> <h3>My
-            Blog</h3>
-            <p>Simple Blog setup. Coded using NodeJS, Express, MongoDB, EJS Templates. Deployed on Heroku. I am hoping
-              to add
-              more functionatily to this by adding images but working towards rebuilding in React soon.</p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content">
-          <img src="/Images/ToDo-List.png" alt="To Do List" style="width:100%">
-          <i class="far fa-eye button1" onclick=window.open("https://j3ffjessie-todolist.herokuapp.com")> </i> <i
-            class="fab fa-github button2" onclick=window.open("https://github.com/J3ffJessie/To-Do-List")> </i> <h3>To
-            Do List</h3>
-            <p>A Family To Do List coded using NodeJS, Express, MongoDB and deployed on Heroku. Helps keep me and my
-              wife tracking our todo lists.</p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content">
-          <img src="/Images/simon.png" alt="Simon Says" style="width:100%">
-          <i class="far fa-eye button1" onclick=window.open("https://j3ffjessie.github.io/Simon-Game/")> </i> <i
-            class="fab fa-github button2" onclick=window.open("https://github.com/J3ffJessie/Simon-Game")> </i>
-            <h3>CyberSimon Says</h3>
-            <p>Simon Says utilizing Javascript along with HTML and CSS.</p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content">
-          <img src="/Images/signup.png" alt="Newsletter Signup" style="width:100%">
-          <i class="far fa-eye button1" onclick=window.open("https://jjnewsletter.herokuapp.com/")> </i> <i
-            class="fab fa-github button2" onclick=window.open("https://github.com/J3ffJessie/Newsletter-Signup")> </i>
-            <h3>Newsletter Signup Page</h3>
-            <p>Utilized Mailchimp API, alongside express server and NodeJS, hosted on Heroku.</p>
-        </div>
-      </div>
-    </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <img src="/Images/Blog.png" alt="Blog Homepage" class="card-img-top">
+            <h5 class="card-title">My Code Journey Blog</h5>
+            <p class="card-text">My blog, coded using NodeJS, Express, EJS templates, MongoDB and deployed to Heroku.
+            </p>
+            <button type="button" class="btn btn-outline-primary btn-sm"><i class="fab fa-github button2"
+                onclick=window.open("https://github.com/J3ffJessie/DiceGame")> </i> </button> <button type="button"
+                class="btn btn-outline-secondary btn-sm"><i class="fa fa-external-link-square-alt fa-w-14 fa-3x"
+                  onclick=window.open("https://github.com/J3ffJessie/DiceGame")> </i> </button> </div> </div> </div>
+                  <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <button type="button" class="btn btn-outline-primary btn-sm">Go here</button>
+                      <button type="button" class="btn btn-outline-secondary btn-sm">Go there</button>
+                    </div>
+                  </div>
+          </div>
 
-    <div class="content">
+          <!-- example of how the project cards need to be setup -->
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <img src="/Images/Blog.png" alt="blog homepage" class="card-img-top">
+                <h5 class="card-title">Speical Title</h5>
+                <p class="card-text">Here is the explanation of the project.</p>
+                <a href="#" class="btn btn-primary">Link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="content">
       <img src="" alt="" style="width:100%">
       <h3 class="bottom-section">Some Other Work</h3>
       <p>These are some of my other projects that may not be tied to web development per say, but that I had fun working
@@ -126,12 +122,12 @@
       </div>
     </div>
 
-  </div>
+  </div> -->
 
 
 
 
-  <script src="index.js"></script>
+        <script src="index.js"></script>
 </body>
 
 </html>
