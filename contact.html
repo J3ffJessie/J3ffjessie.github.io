@@ -15,40 +15,26 @@
 </head>
 
 <body>
-  <nav class="navbar">
-    <span class="navbar-toggle" id="js-navbar-toggle">
-      <i class="fas fa-bars"></i>
-    </span>
-    <a class="logo">Contact Me</a>
-    <ul class="main-nav" id="js-menu">
-      <li>
-        <a href="index.html" class="nav-links">Home</a>
-      </li>
-      <li>
-        <a href="about.html" class="nav-links">About Me</a>
-      </li>
-      <li>
-        <a href="contact.html" class="nav-links">Contact Me</a>
-      </li>
-      <li>
-        <a href="projects.html" class="nav-links">My Work</a>
-      </li>
-    </ul>
-  </nav>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
   <h1>Reach Out</h1>
   <div class="form-container">
     <form class="form-element" action="action_page.php">
-  
+
       <label class="label" for="fname">First Name</label>
       <input type="text" id="fname" name="firstname" placeholder="Your name..">
-  
+
       <label class="label" for="lname">Last Name</label>
       <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
       <label class="label" for="subject">Subject</label>
       <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
       <a class="form-submit" href="mailto:j3ffjessie@icloud.com?Subject=Website%20Contact" target="_top">Send Mail</a>
-  
+
     </form>
   </div>
 </body>

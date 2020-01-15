@@ -17,29 +17,16 @@
 </head>
 
 <body>
-  <nav class="navbar">
-    <span class="navbar-toggle" id="js-navbar-toggle">
-      <i class="fas fa-bars"></i>
-    </span>
-    <a class="logo">Jeff Jessie</a>
-    <ul class="main-nav" id="js-menu">
-      <li>
-        <a href="index.html" class="nav-links">Home</a>
-      </li>
-      <li>
-        <a href="about.html" class="nav-links">About Me</a>
-      </li>
-      <li>
-        <a href="contact.html" class="nav-links">Contact Me</a>
-      </li>
-      <li>
-        <a href="projects.html" class="nav-links">My Work</a>
-      </li>
-    </ul>
-  </nav>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="#" onclick=window.open("https://j2development.herokuapp.com")>Blog </a> <a href="projects.html">My
+      Projects</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
   <div class="main">
 
-    <h2>My Work</h2>
+    <h1 class="project-header">My Work</h1>
     <p>All work has links to source code as well as viewing in browser.</p>
 
     <!-- Portfolio Gallery Grid -->
@@ -51,17 +38,19 @@
             <h5 class="card-title">My Code Journey Blog</h5>
             <p class="card-text">My blog, coded using NodeJS, Express, EJS templates, MongoDB and deployed to Heroku.
             </p>
-            <button type="button" class="btn btn-outline-primary btn-sm"><i class="fab fa-github button2"
-                onclick=window.open("https://github.com/J3ffJessie/DiceGame")> </i> </button> <button type="button"
-                class="btn btn-outline-secondary btn-sm"><i class="fa fa-external-link-square-alt fa-w-14 fa-3x"
-                  onclick=window.open("https://github.com/J3ffJessie/DiceGame")> </i> </button> </div> </div> </div>
-                  <div class="col-sm-3">
+            <button type="button" class="btn btn-outline-primary btn-sm"><i class="fab fa-github-alt fa-w-14"
+                onclick=window.open("https://github.com/J3ffJessie/CodeJourney")> </i> </button> <button type="button"
+                class="btn btn-outline-primary btn-sm"><i class="fa fa-external-link-square-alt fa-w-14 fa-3x"
+                  onclick=window.open("https://j2development.herokuapp.com")> </i> </button> </div> </div> </div> <div
+                  class="col-sm-3">
                   <div class="card">
                     <div class="card-body">
                       <h5 class="card-title">Special title treatment</h5>
                       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <button type="button" class="btn btn-outline-primary btn-sm">Go here</button>
-                      <button type="button" class="btn btn-outline-secondary btn-sm">Go there</button>
+                      <button type="button" class="btn btn-outline-primary btn-sm"><i class="fab fa-github-alt fa-w-14"
+                        onclick=window.open("https://github.com/J3ffJessie/CodeJourney")> </i> </button> <button type="button"
+                        class="btn btn-outline-primary btn-sm"><i class="fa fa-external-link-square-alt fa-w-14 fa-3x"
+                          onclick=window.open("https://j2development.herokuapp.com")> </i> </button>
                     </div>
                   </div>
           </div>
@@ -70,10 +59,14 @@
           <div class="col-sm-3">
             <div class="card">
               <div class="card-body">
-                <img src="/Images/Blog.png" alt="blog homepage" class="card-img-top">
-                <h5 class="card-title">Speical Title</h5>
-                <p class="card-text">Here is the explanation of the project.</p>
-                <a href="#" class="btn btn-primary">Link</a>
+                <img src="/Images/ToDo-List.png" alt="To Do List" class="card-img-top">
+                <h5 class="card-title">Family To Do List</h5>
+                <p class="card-text">Family to-do list to keep me and my wife synced together. Coded using NodeJS,
+                  Express, MongoDB, as well as HTML, CSS.</p>
+                  <button type="button" class="btn btn-outline-primary btn-sm"><i class="fab fa-github-alt fa-w-14"
+                    onclick=window.open("https://github.com/J3ffJessie/CodeJourney")> </i> </button> <button type="button"
+                    class="btn btn-outline-primary btn-sm"><i class="fa fa-external-link-square-alt fa-w-14 fa-3x"
+                      onclick=window.open("https://j2development.herokuapp.com")> </i> </button>
               </div>
             </div>
           </div>
