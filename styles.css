@@ -115,6 +115,10 @@
 
   }
 
+  .home-image {
+    padding-bottom: 20px;
+  }
+
   h1,
   h2 {
     font-family: 'Calligraffitti', cursive;
