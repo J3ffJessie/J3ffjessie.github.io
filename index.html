@@ -21,28 +21,73 @@
 <body>
   <div class="topnav" id="myTopnav">
     <a href="index.html" class="active">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="projects.html">My Projects</a>
-    <a href="#" onclick=window.open("https://j2development.herokuapp.com")>My Blog</a>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#projects">My Projects</a>
   </div>
+
+  <div class="top-container" id="slide-in">
+    <h1>Jeff Jessie</h1>
+    <img src="/Images/jeff profile.png" alt="Cartoon Profile Image" class="home-image">
+    <h1>
+  <span
+     class="txt-rotate"
+     data-period="2000"
+     data-rotate='[ "Veteran", "Diligent", "Web Developer" ]'></span>
+</h1>
+
+ </div>
+  <div id="about" class="about-container">
+    <p>Hello, I am Jeff Jessie a Front End Developer and overall web junkie. I love taking ideas and formulating
+      the best approach to making that idea appear on all screens. I have experience with HTMl, CSS, JavaScript as well
+      as React. <br />
+      I also have experience with Express and NodeJS for backend server side and Database experience using GraphQL,
+      MongoDB and MySQL.</p>
+    <p>I am looking to join a company as a Front End Developer where I can work with great people to make beautiful
+      websites and web applications through hard work, team work and dedication. My ideal
+      company is one that prides itself on being honest, inclusive, energetic and dedicated to making great things.
+    </p>
+  </div>
+  <div id="projects" class="container">
+    <div class="elem">
+      <a href="https://github.com/J3ffJessie/CodeJourney" target="_blank"><img src="/Images/Blog.png" alt="Blog Homepage" class="card-img-top"></a>
+      <h5>My Code Journey Blog</h5>
+      <p>My blog, coded using NodeJS, Express, EJS templates, MongoDB and deployed to Heroku.
+    </div>
+    <div class="elem">
+      <a href="https://github.com/J3ffJessie/To-Do-List" target="_blank"><img src="/Images/ToDo-List.png" alt="To Do List" class="card-img-top"></a>
+      <h5>Family To Do List</h5>
+      <p>Family to-do list to keep me and my wife synced together. Coded using NodeJS, Express,
+        MongoDB, as well as HTML, CSS.</p>
+    </div>
+    <div class="elem">
+      <a href="https://github.com/J3ffJessie/NoteKeeper" target="_blank"><img src="/Images/NoteKeeper.png" alt="NoteKeeper App" class="card-img-top"></a>
+      <h5>NoteKeeper</h5>
+      <p>Note Keep application similar to Keep from Google. Built using React deployed on Heroku.</p>
+    </div>
+  </div>
+  <div id="contact" class="contact">
+    <a href="mailto:jeffjessie@outlook.com"><button>Contact Me</button></a>
+  </div>
+  <div class="social-links" id="sliding">
+    <a href="https://www.linkedin.com/in/jeff-jessie-4b2323a9/" target="_blank"><i
+        class="fab fa-linkedin fa-w-14 fa-3x"></i></a>
+    <a href="https://twitter.com/J3ffJessie" target="_blank"><i class="fab fa-twitter-square fa-w-14 fa-3x"></i></a>
+    <a href="https://dev.to/j3ffjessie" target="_blank"><i class="fab fa-dev fa-w-14 fa-3x"></i></a>
+    <a href="https://fosstodon.org/web/accounts/189500" target="_blank"><i class="fab fa-mastodon"></i></a>
+    </>
 </body>
-<div class="top-container" id="slide-in">
-  <h1>Jeff Jessie</h1>
-  <img src="/Images/jeff profile.png" alt="Cartoon Profile Image" class="home-image">
-  <h2>Web Developer</h2>
-  
-</div>
-<br>
-<div class="social-links" id="sliding">
-</div>
 <script src="index.js"></script>
 <footer class="footer mt-auto py-3">
   <div class="container">
     <span class="text-muted">&copyJ2 <script type="text/javascript">
-      document.write(new Date().getFullYear());
-    </script></span>
+        document.write(new Date().getFullYear());
+      </script></span>
+      <script>
+        var typed = new Typed('#typed', {
+          stringsElement: '#typed-strings'
+        });
+      </script>
   </div>
 </footer>
 
