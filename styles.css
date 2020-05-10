@@ -351,13 +351,17 @@
   padding-bottom: 20px;
 }
 
+button:hover {
+  background-color: blue;
+}
+
 @media only screen and (max-width: 400px) {
   h1,
   h2 {
 
     color: white;
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: bolder;
   }
   .about-container {
     width: 100%;
