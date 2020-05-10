@@ -4,7 +4,7 @@
 
   body {
     text-align: center;
-    background-image: url("/Images/portfolioBG.png");
+    background: linear-gradient(0.25turn, #3f87a6, #f69d3c);
     color: white;
     font-size: 1.5rem;
   }
@@ -329,24 +329,41 @@
     font-weight: bolder;
   }
 
+
   .about-container {
-    width: 50%;
+    /* width: 50%; */
     height: auto;
     margin: auto;
-    padding-top: 15%;
-    padding-bottom: 5rem;
-
+    padding: 5%;
+    text-align: justify;
   }
 
-  .about-me {
-    font-size: 15px;
-    font-weight: bold;
-    font-style: oblique;
-    padding-top: 15px;
+  .about-container:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
   }
 
 .contact {
   margin: 0 auto;
   padding-top: 10rem;
   padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+  .about-container {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding:10%;
+    text-align: justify;
+  }
+
+  p {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+
 }
