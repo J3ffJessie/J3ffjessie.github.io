@@ -161,6 +161,7 @@
     width: 250px;
     height: 100px;
     display: inline-block;
+    padding-bottom: 10%;
   }
 
   #slide-in {
@@ -351,6 +352,13 @@
 }
 
 @media only screen and (max-width: 400px) {
+  h1,
+  h2 {
+
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
   .about-container {
     width: 100%;
     height: auto;
