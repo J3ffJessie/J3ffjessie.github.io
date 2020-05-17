@@ -12,32 +12,38 @@
   Indie+Flower|Calligraffitti" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_cdSPdmfn0SP8UEjvboxBy");
+   })();
+</script>
+
 </head>
-
+<html>
+<head>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate the contact number value
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('contact_service', 'contact_form', this);
+                document.getElementById("contact-form").reset();
+            });
+        }
+    </script>
+</head>
 <body>
-  <div class="topnav" id="myTopnav">
-    <a href="index.html" class="active">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="projects.html">My Projects</a>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-  </div>
-  <h1>Reach Out</h1>
-  <p>Please don't hesitate to reach out on any of these social platforms. I struggle with my email and I am more active
-    on these social platforms regularly. Wanna chat, curious about a project, wanna work on a project together? Reach
-    out, I am more than likely going to say Yes as I am always ready to try new things and help when possible.</p>
-  <a href="https://www.linkedin.com/in/jeff-jessie-4b2323a9/"><i class="fab fa-linkedin fa-w-14 fa-3x"></i></a>
-  <a href="https://twitter.com/J3ffJessie"><i class="fab fa-twitter-square fa-w-14 fa-3x"></i></a>
-  <a href="https://dev.to/j3ffjessie"><i class="fab fa-dev fa-w-14 fa-3x"></i></a>
-  </div>
+    <form id="contact-form">
+        <input type="hidden" name="contact_number">
+        <label>Name</label>
+        <input type="text" name="user_name">
+        <label>Email</label>
+        <input type="email" name="user_email">
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <input type="submit" value="Send">
+    </form>
 </body>
-<script src="index.js"></script>
-<footer class="footer mt-auto py-3">
-  <div class="container">
-    <span class="text-muted">&copyJ2 <script type="text/javascript">
-        document.write(new Date().getFullYear());
-      </script></span>
-  </div>
-</footer>
-
 </html>
