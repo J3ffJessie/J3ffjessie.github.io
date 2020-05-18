@@ -7,19 +7,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Jeff Jessie</title>
   <link rel="icon" href="/Images/jeff-favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Permanent+Marker|Merienda|
-  Indie+Flower|Calligraffitti" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-    <script type="text/javascript">
-       (function(){
-          emailjs.init("user_cdSPdmfn0SP8UEjvboxBy");
-       })();
-    </script>
-    
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_cdSPdmfn0SP8UEjvboxBy");
+    })();
+  </script>
   <link rel="stylesheet" href="styles.css">
 
 
@@ -38,13 +35,10 @@
     <h1>Jeff Jessie</h1>
     <img src="/Images/jeff profile.png" alt="Cartoon Profile Image" class="home-image">
     <h1>
-  <span
-     class="txt-rotate"
-     data-period="2000"
-     data-rotate='[ "Veteran", "Diligent", "Web Developer" ]'></span>
-</h1>
+      <span class="txt-rotate" data-period="2000" data-rotate='[ "Veteran", "Diligent", "Web Developer" ]'></span>
+    </h1>
 
- </div>
+  </div>
   <div id="about" class="about-container">
     <p>Hello, I am Jeff Jessie a Front End Developer and overall web junkie. I love taking ideas and formulating
       the best approach to making that idea appear on all screens. I have experience with HTML, CSS, JavaScript as well
@@ -58,53 +52,80 @@
   </div>
   <div id="projects" class="container">
     <div class="elem">
-      <a href="https://github.com/J3ffJessie/CodeJourney" target="_blank"><img src="/Images/Blog.png" alt="Blog Homepage" class="card-img-top"></a>
+      <a href="https://github.com/J3ffJessie/CodeJourney" target="_blank"><img src="/Images/Blog.png"
+          alt="Blog Homepage" class="card-img-top"></a>
       <h5>My Code Journey Blog</h5>
       <p>My blog, coded using NodeJS, Express, EJS templates, MongoDB and deployed to Heroku.
     </div>
     <div class="elem">
-      <a href="https://github.com/J3ffJessie/To-Do-List" target="_blank"><img src="/Images/ToDo-List.png" alt="To Do List" class="card-img-top"></a>
+      <a href="https://github.com/J3ffJessie/To-Do-List" target="_blank"><img src="/Images/ToDo-List.png"
+          alt="To Do List" class="card-img-top"></a>
       <h5>Family To Do List</h5>
       <p>Family to-do list to keep me and my wife synced together. Coded using NodeJS, Express,
         MongoDB, as well as HTML, CSS.</p>
     </div>
     <div class="elem">
-      <a href="https://github.com/J3ffJessie/NoteKeeper" target="_blank"><img src="/Images/NoteKeeper.png" alt="NoteKeeper App" class="card-img-top"></a>
+      <a href="https://github.com/J3ffJessie/NoteKeeper" target="_blank"><img src="/Images/NoteKeeper.png"
+          alt="NoteKeeper App" class="card-img-top"></a>
       <h5>NoteKeeper</h5>
       <p>Note Keep application similar to Keep from Google. Built using React deployed on Heroku.</p>
     </div>
   </div>
-  <div id="contact" class="contact">
+
+  <div class="contact-area" id="contact">
+    <h1 class="contact-heading">CONTACT ME</h1>
     <form id="contact-form">
       <input type="hidden" name="contact_number">
+      <br>
       <label>Name</label>
+      <br>
       <input type="text" name="user_name">
+      <br>
       <label>Email</label>
+      <br>
       <input type="email" name="user_email">
+      <br>
       <label>Message</label>
-      <textarea name="message"></textarea>
-      <input type="submit" value="Send">
-  </form>
+      <br>
+      <textarea name="message" rows="4" cols="20"></textarea>
+      <br>
+      <button type="submit" value="Send"> Send It!</button>
+    </form>
   </div>
+
   <div class="social-links" id="sliding">
     <a href="https://www.linkedin.com/in/jeff-jessie-4b2323a9/" target="_blank"><i
         class="fab fa-linkedin fa-w-14 fa-3x"></i></a>
     <a href="https://twitter.com/J3ffJessie" target="_blank"><i class="fab fa-twitter-square fa-w-14 fa-3x"></i></a>
     <a href="https://dev.to/j3ffjessie" target="_blank"><i class="fab fa-dev fa-w-14 fa-3x"></i></a>
     <a href="https://fosstodon.org/web/accounts/189500" target="_blank"><i class="fab fa-mastodon"></i></a>
-    </>
+  </div>
+
 </body>
 <script src="index.js"></script>
 <footer class="footer mt-auto py-3">
-  <div class="container">
-    <span class="text-muted">&copyJ2 <script type="text/javascript">
+  <div class="footer-container">
+    <div>Created by Jeff Jessie &copy <script type="text/javascript">
         document.write(new Date().getFullYear());
-      </script></span>
-      <script>
-        var typed = new Typed('#typed', {
-          stringsElement: '#typed-strings'
-        });
       </script>
+    </div>
+    <script>
+      var typed = new Typed('#typed', {
+        stringsElement: '#typed-strings'
+      });
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+          event.preventDefault();
+          // generate the contact number value
+          this.contact_number.value = Math.random() * 100000 | 0;
+          emailjs.sendForm('contact_service', 'contact_form', this);
+          document.getElementById("contact-form").reset();
+        });
+      }
+    </script>
+
   </div>
 </footer>
 
