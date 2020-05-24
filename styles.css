@@ -273,6 +273,7 @@
     margin: 0 auto;
     height: auto;
     width: 100%;
+    padding-bottom: 15px;;
   }
 
   /*Styling Projects Responsive */
@@ -380,4 +381,9 @@ button:hover {
   }
 
 
+}
+
+
+#contact-form {
+  letter-spacing: 2px;
 }
