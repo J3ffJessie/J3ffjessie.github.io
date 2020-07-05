@@ -260,39 +260,6 @@
     }
   }
 
-  /*Styling for Projects Area */
-
-  .container {
-    column-count: 3;
-    column-gap: 20px;
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .elem {
-    display: inline-block;
-    margin: 0 auto;
-    height: auto;
-    width: 100%;
-    padding-bottom: 15px;
-    ;
-  }
-
-  /*Styling Projects Responsive */
-
-  @media only screen and (max-width: 700px) {
-    .container {
-      column-count: 2;
-      width: 100%;
-    }
-  }
-
-  @media only screen and (max-width: 500px) {
-    .container {
-      column-count: 1;
-    }
-  }
-
 
   /*Styling for the footer element */
   .footer {
@@ -354,6 +321,10 @@
     padding-bottom: 20px;
   }
 
+  .contact-heading {
+    padding-top: 20px;
+  }
+
   button:hover {
     background-color: blue;
   }
@@ -368,6 +339,7 @@
     font-size: 30px;
     text-align: justify;
   }
+
   .thanks-text {
     font-size: 20px;
   }
@@ -403,4 +375,113 @@
 
   #contact-form {
     letter-spacing: 2px;
+  }
+
+
+  /* Gallery CSS keeping isolated for condensing later */
+
+
+  * {box-sizing:border-box}
+
+
+  .projectText{
+    font-size: 1rem;
+  }
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 700px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "previous button" to the left */
+  
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .prev, .next {
+      cursor: pointer;
+    position: absolute;
+    top: 25%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    }
   }
