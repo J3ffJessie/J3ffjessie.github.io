@@ -1,18 +1,17 @@
-// Navigation Function
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
+function toggleNavigation() {
+  let topNav = document.getElementById("myTopnav");
+  if (topNav.className === "topnav") {
+    topNav.className += " responsive";
   } else {
-    x.className = "topnav";
+    topNav.className = "topnav";
   }
 };
 
 
 // Typed Heading
-var TxtRotate = function(el, toRotate, period) {
+const TxtRotate = function(element, toRotate, period) {
   this.toRotate = toRotate;
-  this.el = el;
+  this.element = element;
   this.loopNum = 0;
   this.period = parseInt(period, 10) || 2000;
   this.txt = '';
@@ -21,8 +20,8 @@ var TxtRotate = function(el, toRotate, period) {
 };
 
 TxtRotate.prototype.tick = function() {
-  var i = this.loopNum % this.toRotate.length;
-  var fullTxt = this.toRotate[i];
+  let integer = this.loopNum % this.toRotate.length;
+  let fullTxt = this.toRotate[integer];
 
   if (this.isDeleting) {
     this.txt = fullTxt.substring(0, this.txt.length - 1);
@@ -30,10 +29,10 @@ TxtRotate.prototype.tick = function() {
     this.txt = fullTxt.substring(0, this.txt.length + 1);
   }
 
-  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+  this.element.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
-  var that = this;
-  var delta = 300 - Math.random() * 100;
+  let that = this;
+  let delta = 300 - Math.random() * 100;
 
   if (this.isDeleting) { delta /= 2; }
 
@@ -52,23 +51,25 @@ TxtRotate.prototype.tick = function() {
 };
 
 window.onload = function() {
-  var elements = document.getElementsByClassName('txt-rotate');
+  let elements = document.getElementsByClassName('txt-rotate');
   for (var i=0; i<elements.length; i++) {
-    var toRotate = elements[i].getAttribute('data-rotate');
-    var period = elements[i].getAttribute('data-period');
+    let toRotate = elements[i].getAttribute('data-rotate');
+    let period = elements[i].getAttribute('data-period');
     if (toRotate) {
       new TxtRotate(elements[i], JSON.parse(toRotate), period);
     }
   }
   // INJECT CSS
-  var css = document.createElement("style");
+  let css = document.createElement("style");
   css.type = "text/css";
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
 };
 
 
-var slideIndex = 1;
+//Gallery Slide Control
+
+let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -82,9 +83,9 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
