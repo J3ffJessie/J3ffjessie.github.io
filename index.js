@@ -1,12 +1,3 @@
-function toggleNavigation() {
-  let topNav = document.getElementById("myTopnav");
-  if (topNav.className === "topnav") {
-    topNav.className += " responsive";
-  } else {
-    topNav.className = "topnav";
-  }
-};
-
 
 // Typed Heading
 const TxtRotate = function(element, toRotate, period) {
