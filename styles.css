@@ -4,120 +4,87 @@
 
   body {
     text-align: center;
-    background: linear-gradient(0.25turn, #3f87a6, #f69d3c);
+    background: #264653;
     color: white;
     font-size: 1.5rem;
   }
 
   /*navigation bar styling */
 
-  .topnav {
-    overflow: hidden;
+  #container {
+    width: 240px;
+    position: relative;
+    background: #fff;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 0 0 5px 5px;
   }
 
-  .topnav a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-
-  .active {
-    color: white;
-  }
-
-  .topnav .icon {
-    display: none;
-  }
-
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-
-  .dropdown .dropbtn {
-    font-size: 17px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-
-  .dropdown-content {
+  #main_nav {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    background: inherit;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  #main_nav ul li:hover {
+    font-size: 2rem;
+  }
+
+  .with_nav #main_nav {
+    display: flex;
+    top: 0;
+    left: 0;
+    background: transparent;
+    border-radius: 0 0 5px 5px;
+    justify-content: flex-end;
+    padding-top: 25px;
+    padding-right: 45px;
+  }
+
+  .access_aid {
+    display: none;
+  }
+
+  #access_nav {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 0;
+    padding-top: 40px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background: #2A9D8F 10px 10px / 20px 20px no-repeat;
+    background-image: -webkit-repeating-linear-gradient(#ccc, #ccc 2px, #2A9D8F 2px, #2A9D8F 4px);
+    background-image: repeating-linear-gradient(#ccc, #ccc 2px, #2A9D8F 2px, #2A9D8F 4px);
     z-index: 1;
   }
 
-  .dropdown-content a {
-    float: none;
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  .topnav a:hover,
-  .dropdown:hover .dropbtn {
-    background-color: rgb(7, 111, 196);
-    color: white;
-  }
-
-  .dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  @media screen and (max-width: 600px) {
-
-    .topnav a:not(:first-child),
-    .dropdown .dropbtn {
-      display: none;
-    }
-
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-  }
-
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {
-      position: relative;
-    }
-
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-
+  .with_nav #access_nav {
+    background-image: linear-gradient(45deg, transparent 13px, #ccc 13px, #ccc 15px, transparent 0), linear-gradient(-45deg, #2A9D8F 13px, #ccc 13px, #ccc 15px, #2A9D8F 0);
   }
 
   .home-image {
     padding-bottom: 20px;
   }
 
+  a {
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background: #2A9D8F;
+    border-radius: 15%;
+  }
 
 
   h1,
@@ -128,39 +95,13 @@
     font-weight: bold;
   }
 
-  li {
-    font-weight: bolder;
-    font-size: 1.5rem;
-  }
-
-  .button1,
-  .button2 {
-    font-size: 35px;
-    border-radius: 50%;
-    border: 2px solid black;
-    border-spacing: 2px;
-  }
-
-  .button1:hover,
-  .button2:hover {
-    color: red;
-    cursor: pointer;
-  }
-
-  .button1,
-  .button2 {
-    -webkit-transition-duration: 0.4s;
-    /* Safari */
-    transition-duration: 0.4s;
-  }
-
 
   .top-container {
+    display: inline-block;
     text-align: center;
     margin-top: 75px;
     width: 250px;
     height: 100px;
-    display: inline-block;
     padding-bottom: 10%;
   }
 
@@ -187,6 +128,12 @@
     }
   }
 
+  span {
+    display: inline-block;
+    flex-wrap: wrap;
+    text-decoration: none;
+  }
+
   .social-links {
     margin-top: 45px;
     width: 250px;
@@ -196,11 +143,11 @@
 
   .fab {
     font-size: 40px;
-    color: white
+    color: white;
   }
 
   .fab:hover {
-    color: blue;
+    color: #2A9D8F;
   }
 
   .fas {
@@ -228,10 +175,6 @@
   }
 
   a {
-    color: black;
-  }
-
-  a:hover {
     color: white;
   }
 
@@ -264,7 +207,7 @@
   /*Styling for the footer element */
   .footer {
     padding-top: 1rem;
-    font-size: 12px;
+    font-size: 20px;
     color: white;
   }
 
@@ -272,34 +215,6 @@
   * {
     box-sizing: border-box;
   }
-
-  body {
-    padding: 20px;
-    font-family: Arial;
-  }
-
-  /* Center website */
-  .main {
-    max-width: 1000px;
-    margin: auto;
-  }
-
-  /* Content */
-  .content {
-    background-color: white;
-    padding: 10px;
-  }
-
-
-  .content {
-    background-color: inherit;
-  }
-
-  .bottom-section {
-    font-size: 30px;
-    font-weight: bolder;
-  }
-
 
   .about-container {
     /* width: 50%; */
@@ -316,6 +231,9 @@
   }
 
   .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 0 auto;
     padding-top: 10rem;
     padding-bottom: 20px;
@@ -325,9 +243,25 @@
     padding-top: 20px;
   }
 
-  button:hover {
-    background-color: blue;
+  #contact-form input {
+    background: #2A9D8F;
+    color: white;
   }
+
+  #contact-form textarea {
+    background: #2A9D8F;
+    color: white;
+  }
+  
+  button {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  button:hover {
+    font-size: 1.5rem;
+  }
+
 
   .thanks {
     text-align: justify;
@@ -372,116 +306,3 @@
 
   }
 
-
-  #contact-form {
-    letter-spacing: 2px;
-  }
-
-
-  /* Gallery CSS keeping isolated for condensing later */
-
-
-  * {box-sizing:border-box}
-
-
-  .projectText{
-    font-size: 1rem;
-  }
-  
-  /* Slideshow container */
-  .slideshow-container {
-    max-width: 700px;
-    position: relative;
-    margin: auto;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "previous button" to the left */
-  
-  .prev {
-    left: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .prev, .next {
-      cursor: pointer;
-    position: absolute;
-    top: 25%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    }
-  }

@@ -1,15 +1,15 @@
-function toggleNavigation() {
-  let topNav = document.getElementById("myTopnav");
-  if (topNav.className === "topnav") {
-    topNav.className += " responsive";
-  } else {
-    topNav.className = "topnav";
-  }
-};
+//Navigation alternate hidden versus showing elements
+const nav = document.getElementById('access_nav'),
+  body = document.body;
+
+nav.addEventListener('click', function (e) {
+  body.className = body.className ? '' : 'with_nav';
+  e.preventDefault();
+});
 
 
 // Typed Heading
-const TxtRotate = function(element, toRotate, period) {
+const TxtRotate = function (element, toRotate, period) {
   this.toRotate = toRotate;
   this.element = element;
   this.loopNum = 0;
@@ -19,7 +19,7 @@ const TxtRotate = function(element, toRotate, period) {
   this.isDeleting = false;
 };
 
-TxtRotate.prototype.tick = function() {
+TxtRotate.prototype.tick = function () {
   let integer = this.loopNum % this.toRotate.length;
   let fullTxt = this.toRotate[integer];
 
@@ -29,12 +29,14 @@ TxtRotate.prototype.tick = function() {
     this.txt = fullTxt.substring(0, this.txt.length + 1);
   }
 
-  this.element.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+  this.element.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
   let that = this;
   let delta = 300 - Math.random() * 100;
 
-  if (this.isDeleting) { delta /= 2; }
+  if (this.isDeleting) {
+    delta /= 2;
+  }
 
   if (!this.isDeleting && this.txt === fullTxt) {
     delta = this.period;
@@ -45,14 +47,14 @@ TxtRotate.prototype.tick = function() {
     delta = 500;
   }
 
-  setTimeout(function() {
+  setTimeout(function () {
     that.tick();
   }, delta);
 };
 
-window.onload = function() {
+window.onload = function () {
   let elements = document.getElementsByClassName('txt-rotate');
-  for (var i=0; i<elements.length; i++) {
+  for (var i = 0; i < elements.length; i++) {
     let toRotate = elements[i].getAttribute('data-rotate');
     let period = elements[i].getAttribute('data-period');
     if (toRotate) {
@@ -65,39 +67,3 @@ window.onload = function() {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
 };
-
-
-//Gallery Slide Control
-
-let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-} ;
-
-
-
-
