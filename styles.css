@@ -244,13 +244,23 @@
   }
 
   #contact-form input {
-    background: #2A9D8F;
+    background: inherit;
     color: white;
+    width: 200px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid green;
   }
 
   #contact-form textarea {
-    background: #2A9D8F;
+    background: inherit;
     color: white;
+    width: 200px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid green;
   }
   
   button {
