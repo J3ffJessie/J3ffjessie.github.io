@@ -1,10 +1,11 @@
   html {
     scroll-behavior: smooth;
+    background: linear-gradient(45deg, #FF3B5D, #8F7EBB);
   }
 
   body {
     text-align: center;
-    background: #264653;
+    background: #009DA1;
     color: white;
     font-size: 1.5rem;
   }
