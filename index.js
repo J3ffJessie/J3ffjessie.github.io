@@ -67,3 +67,13 @@ window.onload = function () {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
 };
+
+//style iframe for projects //
+
+function setIframeBorderJquery(){
+	$('iframe-border').each(function(){
+		$(this).css({'overflow': 'hidden', 'display': 'inline-block', 'width': $(this).attr('width'), 'height': $(this).attr('height')});
+		$('iframe', this).css({'position': 'relative', 'margin': '0', 'width': '100%', 'height': '100%'});
+	});
+}
+setInterval(setIframeBorderJquery, 10);

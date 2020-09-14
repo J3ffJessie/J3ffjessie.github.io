@@ -232,7 +232,14 @@
   }
   
   #projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   }
+
+iframe-border{
+    border-radius: 25px;
+    }
   
   .contact {
     display: flex;
