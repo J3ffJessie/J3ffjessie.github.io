@@ -26,4 +26,10 @@ const navSlide = () => {
   }
 }
 
+// use this for changing variable colors and making the theme light on click of toggle
+// const themeSwitch = () =>{
+//   document.documentElement.style.setProperty('--your-variable', '#YOURCOLOR');
+// }
+
+
 window.onload = () => navSlide();
