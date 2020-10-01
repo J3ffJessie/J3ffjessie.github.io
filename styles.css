@@ -490,3 +490,7 @@ hr {
 .nav-active {
 	transform: translatex(0%);
 }
+
+h3.project-head{
+	padding:10px;
+}
