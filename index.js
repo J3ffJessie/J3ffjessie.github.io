@@ -26,23 +26,5 @@ const navSlide = () => {
   }
 }
 
-// use this for changing variable colors and making the theme light on click of toggle
-function lightTheme() {
-  document.documentElement.style.setProperty('--main-background', '#688CE8');
-  document.documentElement.style.setProperty('--main-fonts-color', '#000000');
-  document.documentElement.style.setProperty('--main-decor-color', '#E9C46A');
-  document.documentElement.style.setProperty('--main-header-background','#d9a21b');
-};
-
-// function darkTheme() {
-//   document.documentElement.style.setProperty('--main-background', '#0b0c0f');
-//   document.documentElement.style.setProperty('--main-fonts-color', '#fff');
-//   document.documentElement.style.setProperty('--main-decor-color', '#00a9e2');
-//   document.documentElement.style.setProperty('--main-header-background','#21252e');
-// };
-
-
-
-
 
 window.onload = () => navSlide();
