@@ -24,7 +24,7 @@ const navSlide = () => {
     hamburger.classList.toggle("toggle");
 
   }
-}
+};
 
 
 let theme = true;
@@ -40,10 +40,10 @@ function changeTheme(){
 
 // use this for changing variable colors and making the theme light on click of toggle
 function lightTheme() {
-  document.documentElement.style.setProperty('--main-background', '#717788');
-  document.documentElement.style.setProperty('--main-fonts-color', '#000000');
-  document.documentElement.style.setProperty('--main-decor-color', '#f9f871');
-  document.documentElement.style.setProperty('--main-header-background', '#d9a21b');
+  document.documentElement.style.setProperty('--main-background', '#d3d6df');
+  document.documentElement.style.setProperty('--main-fonts-color', 'black');
+  document.documentElement.style.setProperty('--main-decor-color', '#00b1ec');
+  document.documentElement.style.setProperty('--main-header-background', '#bbc1cf');
 };
 
 function darkTheme() {
