@@ -1,5 +1,5 @@
-$(window).on('scroll', function() {
-  if($(window).scrollTop()){
+$(window).on('scroll', function () {
+  if ($(window).scrollTop()) {
     $('header').addClass('nav-show');
   } else {
     $('header').removeClass('nav-show');
@@ -15,7 +15,7 @@ const navSlide = () => {
     navbar.classList.toggle("nav-active");
 
     navLinks.forEach((link, index) => {
-      if(link.style.animation) {
+      if (link.style.animation) {
         link.style.animation = "";
       } else {
         link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7+1}s`;
@@ -26,20 +26,32 @@ const navSlide = () => {
   }
 }
 
+
+let theme = true;
+
+
+function changeTheme(){
+  console.log(theme);
+  theme = !theme
+  console.log(theme);
+  theme ? darkTheme(): lightTheme()
+}
+
+
 // use this for changing variable colors and making the theme light on click of toggle
 function lightTheme() {
   document.documentElement.style.setProperty('--main-background', '#717788');
   document.documentElement.style.setProperty('--main-fonts-color', '#000000');
   document.documentElement.style.setProperty('--main-decor-color', '#f9f871');
-  document.documentElement.style.setProperty('--main-header-background','#d9a21b');
+  document.documentElement.style.setProperty('--main-header-background', '#d9a21b');
 };
 
-// function darkTheme() {
-//   document.documentElement.style.setProperty('--main-background', '#0b0c0f');
-//   document.documentElement.style.setProperty('--main-fonts-color', '#fff');
-//   document.documentElement.style.setProperty('--main-decor-color', '#00a9e2');
-//   document.documentElement.style.setProperty('--main-header-background','#21252e');
-// };
+function darkTheme() {
+  document.documentElement.style.setProperty('--main-background', '#0b0c0f');
+  document.documentElement.style.setProperty('--main-fonts-color', '#fff');
+  document.documentElement.style.setProperty('--main-decor-color', '#00a9e2');
+  document.documentElement.style.setProperty('--main-header-background', '#21252e');
+};
 
 
 
