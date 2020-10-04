@@ -380,7 +380,10 @@ hr {
 	header {
 		background-color: var(--main-header-background);
 	}
-
+	
+	.namebar{
+	padding-top: 100px;
+	}
 	.logo {
 		position: absolute;
 		top: 2px;
