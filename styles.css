@@ -39,8 +39,9 @@ header {
 }
 
 .brand {
-position: absolute;
-left: 20px;
+	position: relative;
+	margin-top: 15px;
+	border-radius: 25%;
 
 }
 
@@ -134,7 +135,8 @@ https://images.photowall.com/products/56607/nashville-tennessee-skyline-2.jpg?q=
 }
 
 h3 {
-	padding-bottom: 15px;
+	padding-bottom: 5px;
+	margin-top: 75px;
 	letter-spacing: normal;
 	font-family: var(--main-font-family);
 	font-style: normal;
@@ -142,11 +144,8 @@ h3 {
 	color: var(--main-fonts-color);
 }
 
-
-
-
 .social-media {
-	padding: 10px;
+	padding-bottom: 25px;
 	display: flex;
 	position: center;
 	align-items: space-around;
@@ -240,7 +239,7 @@ h3.project-head {
 }
 
 .card:hover {
-	box-shadow: 0 0 1.5rem #2196F3 ;
+	box-shadow: 0 0 1.5rem #2196F3;
 }
 
 
@@ -422,35 +421,35 @@ hr {
 	}
 
 
-.card img {
-	border-radius: 25%;
-	width: 50vw;
-	padding: 10px;
-}
+	.card img {
+		border-radius: 25%;
+		width: 50vw;
+		padding: 10px;
+	}
 
-.card .work-content {
-	text-align: center;
-	font-size: 1rem;
-	color: var(--main-fonts-color);
-	font-family: var(--main-font-family);
-	cursor: pointer;
-	border-radius: 0px 0px 10px 10px;
-	background-color: var(--main-decor-color);
-	height: 100%;
-	width: 100%;
-}
+	.card .work-content {
+		text-align: center;
+		font-size: 1rem;
+		color: var(--main-fonts-color);
+		font-family: var(--main-font-family);
+		cursor: pointer;
+		border-radius: 0px 0px 10px 10px;
+		background-color: var(--main-decor-color);
+		height: 100%;
+		width: 100%;
+	}
 
-.card a {
-	text-decoration: none;
-}
+	.card a {
+		text-decoration: none;
+	}
 
-.card .work-content:hover {
-	color: #202020;
-}
+	.card .work-content:hover {
+		color: #202020;
+	}
 
-.card:hover {
-	box-shadow: 0 0 1.5rem #2196F3 ;
-}
+	.card:hover {
+		box-shadow: 0 0 1.5rem #2196F3;
+	}
 
 
 }
