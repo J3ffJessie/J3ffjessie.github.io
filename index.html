@@ -10,112 +10,11 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
-
-
 </head>
 
 <body>
 
-  //how to format a resume in html?
-  <div class="topnav" id="myTopnav">
-    <a id="open"><i class="fas fa-bars fa-2x"></i></a>
-    <a href="index.html" style="display: none">Home</a>
-    <a href="#about" style="display: none">About</a>
-    <a href="#projects" style="display: none">My Projects</a>
-    <a href="#contact" style="display: none">Contact</a>
-
-  </div>
-
-  <div class="top-container" id="slide-in">
-    <h1>Jeff Jessie</h1>
-    <img src="/Images/jeff profile.png" alt="Cartoon Profile Image" class="home-image">
-    <h1>
-      <span class="txt-rotate" data-period="2000" data-rotate='[ "Veteran", "Diligent", "Web Developer" ]'></span>
-    </h1>
-
-  </div>
-  <div id="about" class="about-container">
-    <p>Hello, I am Jeff Jessie a Front End Developer and overall web junkie. I love taking ideas and formulating
-      the best approach to making that idea appear on all screens. I have experience with HTML, CSS, JavaScript as well
-      as React.
-      I also have experience with Express and NodeJS for backend server side and Database experience using GraphQL,
-      MongoDB and MySQL.</p>
-    <p>I am looking to join a company as a Front End Developer where I can work with great people to make beautiful
-      websites and web applications through hard work, team work and dedication. My ideal
-      company is one that prides itself on being honest, inclusive, energetic and dedicated to making great things.
-    </p>
-  </div>
-
-
-  <!-- Portfolio Projects Area gallery, add in projects as needed to add diverse projects -->
-  <div class="slideshow-container" id="projects">
-
-    <div class="mySlides fade" id="projects">
-      <a href="https://github.com/J3ffJessie/CodeJourney" target="blank"><img src="./Images/Blog.png" style="width:100%"></a>
-      <p class="projectText">Personal Blog to keep notes with. EJS Templating utilized for online blog creation.</p>
-      <p class="projectText">Built using:</p>
-      <p class="projectText"><a href="https://nodejs.org/en/"><img src="https://img.icons8.com/color/48/000000/nodejs.png"/><a href="https://expressjs.com/"><img src="https://img.icons8.com/nolan/64/js.png"/><a href="https://www.heroku.com/home"><img src="https://img.icons8.com/nolan/64/heroku.png"/></a></a></a></p>
-    </div>
-
-
-    <div class="mySlides fade" id="projects">
-      <a href="https://github.com/J3ffJessie/To-Do-List"><img src="./Images/ToDoList.png" style="width:100%"></a>
-      <p class="projectText">ToDo List for my wife and I to utilized to keep organized with the kids on todo items for the house.</p>
-      <p class="projectText">Built using:</p>
-      <p class="projectText"><a href="https://nodejs.org/en/"><img src="https://img.icons8.com/color/48/000000/nodejs.png"/><a href="https://expressjs.com/"><img src="https://img.icons8.com/nolan/64/js.png"/><a href="https://www.mongodb.com/"><img src="https://img.icons8.com/color/48/000000/mongodb.png"/></a><a href="https://www.heroku.com/home"><img src="https://img.icons8.com/nolan/64/heroku.png"/></a></a></a></p>
-    </div>
-
-    <div class="mySlides fade" id="projects">
-      <a href="https://github.com/J3ffJessie/NoteKeeper"><img src="./Images/NoteKeep.png" style="width:100%"></a>
-      <p class="projectText">Google Keep style note keeping kanban board.  Allows me to put todays tasks on the screen. Refresh the page and they are gone and the next day starts fresh.</p>
-      <p class="projectText">Built using:</p>
-      <p class="projectText"><a href="https://reactjs.org/"><img src="https://img.icons8.com/plasticine/80/000000/react.png"/><a href="https://www.heroku.com/home"><img src="https://img.icons8.com/nolan/64/heroku.png"/></a></a></p>
-    </div>
-
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
-
-  <!-- The dots/circles -->
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
-
-
-  <!-- Contact area components -->
-  <div class="contact-area">
-    <h1 id="contact" class="contact-heading">CONTACT ME</h1>
-    <form id="contact-form">
-      <input type="hidden" name="contact_number">
-      <br>
-      <label>Name</label>
-      <br>
-      <input type="text" name="user_name" required>
-      <br>
-      <label>Email</label>
-      <br>
-      <input type="email" name="user_email" required>
-      <br>
-      <label>Message</label>
-      <br>
-      <textarea name="message" rows="8" cols="32" required></textarea>
-      <br>
-      <input type="submit" value="Send">
-    </form>
-  </div>
-
-  <div class="social-links" id="sliding">
-    <a href="https://www.linkedin.com/in/jeff-jessie-4b2323a9/" target="_blank"><i
-        class="fab fa-linkedin fa-w-14 fa-3x"></i></a>
-    <a href="https://twitter.com/J3ffJessie" target="_blank"><i class="fab fa-twitter-square fa-w-14 fa-3x"></i></a>
-    <a href="https://dev.to/j3ffjessie" target="_blank"><i class="fab fa-dev fa-w-14 fa-3x"></i></a>
-    <a href="https://fosstodon.org/web/accounts/189500" target="_blank"><i class="fab fa-mastodon"></i></a>
-  </div>
-
+  
 </body>
 <script src="index.js"></script>
 <footer class="footer mt-auto py-3">
@@ -124,18 +23,6 @@
         document.write(new Date().getFullYear());
       </script>
     </div>
-    <script type="text/javascript">
-      window.addEventListener('load', function () {
-        document.getElementById('contact-form').addEventListener('submit', function (event) {
-          event.preventDefault();
-          // generate the contact number value
-          this.contact_number.value = Math.random() * 100000 | 0;
-          emailjs.sendForm('contact_service', 'contact_form', this);
-          alert("Thank you for your Message! I will respond as quickly as possible.")
-          document.getElementById("contact-form").reset();
-        })
-      });
-    </script>
   </div>
 </footer>
 
