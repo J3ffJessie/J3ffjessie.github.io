@@ -89,6 +89,10 @@ sub {
   align-items: center;
 }
 
+.goals > ul {
+  padding-left: 0px;
+}
+
 
 .skills {
   display: flex;
