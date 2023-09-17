@@ -119,6 +119,18 @@ sub {
     flex-direction: column;
   }
 
+  .resume-right {
+    width: auto;
+  }
+
+  .goals {
+    align-self: flex-start;
+  }
+
+  .skills {
+    align-self: flex-start;
+  }
+
 }
 
 .footer  {
